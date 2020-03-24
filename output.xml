@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200324 14:44:11.098" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/admin/Desktop/Arrays y Loops/selenium-automation.robot" id="s1" name="Selenium-Automation">
+<test id="s1-t1" name="C001 Hacer Click en Contenedores">
+<kw name="Open Homepage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${testUrl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200324 14:44:11.322" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" endtime="20200324 14:44:28.825" starttime="20200324 14:44:11.321"></status>
+</kw>
+<status status="PASS" endtime="20200324 14:44:28.826" starttime="20200324 14:44:11.321"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>@{nombredecontenedores}</arg>
+<arg>xpath=//*[@id="homefeatured"]/li[1]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[2]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[3]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[4]/div/div[2]/h5/a</arg>
+</arguments>
+<msg timestamp="20200324 14:44:28.834" level="INFO">@{nombredecontenedores} = [ xpath=//*[@id="homefeatured"]/li[1]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[2]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[3]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[4]/div/div[2]/h5/a ]</msg>
+<status status="PASS" endtime="20200324 14:44:28.834" starttime="20200324 14:44:28.827"></status>
+</kw>
+<kw type="for" name="${element} IN [ @{nombredecontenedores} ]">
+<msg timestamp="20200324 14:44:28.835" level="FAIL">FOR loop contains no keywords.</msg>
+<status status="FAIL" endtime="20200324 14:44:28.835" starttime="20200324 14:44:28.834"></status>
+</kw>
+<status status="FAIL" endtime="20200324 14:44:28.836" critical="yes" starttime="20200324 14:44:11.320">FOR loop contains no keywords.</status>
+</test>
+<status status="FAIL" endtime="20200324 14:44:28.838" starttime="20200324 14:44:11.100"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Selenium-Automation" pass="0">Selenium-Automation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
