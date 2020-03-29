@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200324 14:44:11.098" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<robot rpa="false" generated="20200326 12:09:34.891" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
 <suite source="/Users/admin/Desktop/Arrays y Loops/selenium-automation.robot" id="s1" name="Selenium-Automation">
 <test id="s1-t1" name="C001 Hacer Click en Contenedores">
 <kw name="Open Homepage">
@@ -9,30 +9,33 @@
 <arg>${testUrl}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200324 14:44:11.322" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
-<status status="PASS" endtime="20200324 14:44:28.825" starttime="20200324 14:44:11.321"></status>
+<msg timestamp="20200326 12:09:35.341" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" endtime="20200326 12:09:42.524" starttime="20200326 12:09:35.341"></status>
 </kw>
-<status status="PASS" endtime="20200324 14:44:28.826" starttime="20200324 14:44:11.321"></status>
+<status status="PASS" endtime="20200326 12:09:42.525" starttime="20200326 12:09:35.340"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
-<arg>@{nombredecontenedores}</arg>
-<arg>xpath=//*[@id="homefeatured"]/li[1]/div/div[2]/h5/a</arg>
+<arg>@{nombreDeContenedores}</arg>
+<arg>//*[@id="homefeatured"]/li[1]/div/div[2]/h5/a</arg>
 <arg>//*[@id="homefeatured"]/li[2]/div/div[2]/h5/a</arg>
 <arg>//*[@id="homefeatured"]/li[3]/div/div[2]/h5/a</arg>
 <arg>//*[@id="homefeatured"]/li[4]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[5]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[6]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[7]/div/div[2]/h5/a</arg>
 </arguments>
-<msg timestamp="20200324 14:44:28.834" level="INFO">@{nombredecontenedores} = [ xpath=//*[@id="homefeatured"]/li[1]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[2]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[3]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[4]/div/div[2]/h5/a ]</msg>
-<status status="PASS" endtime="20200324 14:44:28.834" starttime="20200324 14:44:28.827"></status>
+<msg timestamp="20200326 12:09:42.530" level="INFO">@{nombreDeContenedores} = [ //*[@id="homefeatured"]/li[1]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[2]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[3]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[4]/div/div[2]/h5/a | //*[@i...</msg>
+<status status="PASS" endtime="20200326 12:09:42.530" starttime="20200326 12:09:42.526"></status>
 </kw>
-<kw type="for" name="${element} IN [ @{nombredecontenedores} ]">
-<msg timestamp="20200324 14:44:28.835" level="FAIL">FOR loop contains no keywords.</msg>
-<status status="FAIL" endtime="20200324 14:44:28.835" starttime="20200324 14:44:28.834"></status>
+<kw type="for" name="${nombreDeContenedor} IN [ @{nombreDeContenedores} ]">
+<msg timestamp="20200326 12:09:42.531" level="FAIL">FOR loop contains no keywords.</msg>
+<status status="FAIL" endtime="20200326 12:09:42.532" starttime="20200326 12:09:42.531"></status>
 </kw>
-<status status="FAIL" endtime="20200324 14:44:28.836" critical="yes" starttime="20200324 14:44:11.320">FOR loop contains no keywords.</status>
+<status status="FAIL" endtime="20200326 12:09:42.533" critical="yes" starttime="20200326 12:09:35.339">FOR loop contains no keywords.</status>
 </test>
-<status status="FAIL" endtime="20200324 14:44:28.838" starttime="20200324 14:44:11.100"></status>
+<status status="FAIL" endtime="20200326 12:09:42.541" starttime="20200326 12:09:34.894"></status>
 </suite>
 <statistics>
 <total>
